@@ -1,4 +1,4 @@
-# Proceso del desarrollo del sistema #
+# Análisis #
 
 ## Propuesta económica ##
 Para realizar el proyecto había que entregar una propuesta economica, la cual debía
