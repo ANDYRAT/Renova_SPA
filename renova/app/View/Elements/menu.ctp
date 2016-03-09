@@ -33,10 +33,10 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Circustancias Medicas<span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Circunstancias Medicas<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><?php echo $this->Html->link('Lista Circustancias Medicas', array('controller' => 'CircustanciasMedicas', 'action' => 'index')); ?></li>
-                <li><?php echo $this->Html->link('Nueva Circustancia Medica', array('controller' => 'CircustanciasMedicas', 'action' => 'add')); ?></li>
+                <li><?php echo $this->Html->link('Lista Circunstancias Medicas', array('controller' => 'CircustanciasMedicas', 'action' => 'index')); ?></li>
+                <li><?php echo $this->Html->link('Nueva Circunstancia Medica', array('controller' => 'CircustanciasMedicas', 'action' => 'add')); ?></li>
               </ul>
             </li>
             <li class="dropdown">
@@ -69,7 +69,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Terapeutas<span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><?php echo $this->Html->link('Lista Terapeutas', array('controller' => 'Terapeutas', 'action' => 'index')); ?></li>
-                <li><?php echo $this->Html->link('Nuevo Terapeutas', array('controller' => 'Terapeutas', 'action' => 'add')); ?></li>
+                <li><?php echo $this->Html->link('Nuevo Terapeuta', array('controller' => 'Terapeutas', 'action' => 'add')); ?></li>
               </ul>
             </li><li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tratamientos<span class="caret"></span></a>

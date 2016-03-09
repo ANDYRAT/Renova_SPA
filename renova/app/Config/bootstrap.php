@@ -94,6 +94,7 @@ Configure::write('Dispatcher.filters', array(
 
 /**
  * Configures default file logging options
+ * Agregue el plugin de pdf para poder realizar la impresión
  */
 App::uses('CakeLog', 'Log');
 CakeLog::config('debug', array(
@@ -105,4 +106,13 @@ CakeLog::config('error', array(
 	'engine' => 'File',
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
+));
+
+CakePlugin::load('CakePdf', array('bootstrap' => true, 'routes' => true));
+define('DOMPDF_ENABLE_REMOTE', true);
+
+Configure::write('CakePdf', array(
+	'engine' => 'CakePdf.DomPdf',
+	'pageSize' => 'A4',
+	'orientation' => 'portrait'
 ));

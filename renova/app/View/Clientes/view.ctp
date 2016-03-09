@@ -92,3 +92,7 @@
 			&nbsp;
 		</dd>
 </div>
+<div class="actions">
+	<h3><?php echo __('Hoja de Exoneración'); ?></h3>
+	<?php echo $this->Html->link(__('Imprimir'), array('action' => 'view', $cliente['Cliente']['id'], 'ext' => 'pdf'), array('class' => 'btn btn-success')); ?><br>
+</div>

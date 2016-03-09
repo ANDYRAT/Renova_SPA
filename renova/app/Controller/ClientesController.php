@@ -13,7 +13,7 @@ class ClientesController extends AppController {
  *
  * @var array
  */
-	public $components = array('Paginator');
+	public $components = array('Paginator', 'RequestHandler');
 
 /**
  * index method
@@ -37,6 +37,10 @@ class ClientesController extends AppController {
 			throw new NotFoundException(__('Invalid cliente'));
 		}
 		$options = array('conditions' => array('Cliente.' . $this->Cliente->primaryKey => $id));
+		$this->pdfConfig = array(
+			'download' => true,
+			'filename' => 'user_' . $id . '.pdf'
+		);
 		$this->set('cliente', $this->Cliente->find('first', $options));
 	}
 

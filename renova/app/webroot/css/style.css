@@ -1,0 +1,27 @@
+body{
+  font: verdana;
+  font-size: 12px;
+  margin: 15px;
+  padding: 15px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+nav ul li{
+  display: inline;
+  font-size: 30px;
+}
+.titulo{
+  text-align: center;
+  font: verdana;
+}
+.dts-form{
+  text-align: center;
+}
+ul .img-calif{
+  display: inline;
+}
+.firmas{
+  text-align: center;
+}
